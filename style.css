@@ -76,6 +76,47 @@ body {
     color: #1a73e8;
 }
 
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+#nav-menu {
+  display: flex;
+  gap: 20px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  #nav-menu {
+    display: none;
+    flex-direction: column;
+    background: white;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  }
+
+  #nav-menu.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+
 
 /* LAYOUT */
 .layout {
@@ -502,6 +543,7 @@ h1 {
     margin-top: 5px;
     font-size: 14px;
 }
+
 
 
 
