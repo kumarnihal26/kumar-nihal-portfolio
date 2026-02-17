@@ -301,10 +301,9 @@ View Certificate →
 
 <div class="contact-wrapper">
 
-<form name="contact" method="POST" data-netlify="true" action="/thank-you.html">
-
-
-<input type="hidden" name="form-name" value="contact">
+<form action="https://formspree.io/f/mnjbvbej"
+      method="POST"
+      class="contact-form">
 
 <div class="input-group">
 <label>Your Name</label>
@@ -326,15 +325,16 @@ View Certificate →
 <textarea name="message" rows="5" required></textarea>
 </div>
 
+<!-- Redirect after submit -->
+<input type="hidden" name="_redirect" value="https://kumar-nihal.com/thank-you.html">
+
 <button type="submit" class="send-btn">Send Message</button>
 
 </form>
-<p style="margin-top:20px; font-size:14px; color:#666;">
-I typically respond within 24 hours.
-</p>
 
 </div>
 </section>
+
 
 
 <section id="resume" class="tab-section">
@@ -415,3 +415,4 @@ document.addEventListener("DOMContentLoaded", () => {
 
 </body>
 </html>
+
